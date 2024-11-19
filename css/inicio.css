@@ -1,0 +1,245 @@
+*{
+    background-color: #040D12;
+    --primary-color:  #044343;
+    --secundari-color: #045757;
+    --third-color:#5C8374;
+    --quarter-color:#EEEEEE;
+}
+/* CSS inicio */
+header{
+    padding-top: 150px;
+}
+nav.portafolio{
+    background: var(--primary-color);
+    position: fixed;
+    width: 100%;z-index: 999;
+    padding:20px 0 ;
+    top: 10px;
+    text-decoration: none;
+}
+#inicio h1{
+    color: #EEEEEE;
+    font-size: 50px;
+}
+#inicio h2{
+    color: var(--secundari-color);
+    font-size: 35px;
+}
+#inicio a{
+    color: #EEEEEE;
+    font-size: 20px;
+}
+#inicio p{
+    color: #EEEEEE;
+    font-size: 20px;
+}
+nav.navbar-brand img{
+    width: 200px;
+    width: 100%;
+}
+
+nav.portafolio ul li{
+    margin-top: 14px;
+}
+
+nav.portafolio ul li a {
+    color: #fff;
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.portafolio ul li a:hover{
+    color: var(--third-color);
+}
+
+/* CSS Perfil */
+#perfil h1{
+    color: #EEEEEE;
+    font-size: 50px;
+}
+#perfil h2{
+    color: var(--secundari-color);
+    font-size: 35px;
+}
+#perfil a{
+    color: #EEEEEE;
+    font-size: 20px;
+}
+#perfil p{
+    color: #EEEEEE;
+    font-size: 20px;
+}
+/* CSS habilidades 1 */
+#section2{
+    background: #f5f5f5;
+    padding: 120px 0 210px;
+    width: 100%;
+    position: relative;
+}
+
+#section2 .info-section2{
+    width: 60%;
+}
+
+#section2 .info-section2 h3{
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+#section2 .info-section2 h3 b{
+    color: var(--primary-color);
+}
+
+#section2 .info-section2 p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+
+#section2 .fila .cards{
+    width: 30%;
+    max-width: 270px;
+    padding: 50px;
+    box-shadow: 0px 4px 8px -5px #999;
+    margin-top: 50px;
+    border-bottom: 4px solid var(--primary-color);
+    background: #ffffff;
+    position: relative;
+}
+
+#section2 .fila .cards::after{
+    width: 0;
+    height: 100%;
+    content: "";
+    position: absolute;
+    left:0;
+    top: 0;
+    background: url(../img/bg-section.jpg);
+    opacity: 30% var(--second-color);
+    z-index: 1;
+    transition: .4s;
+}
+
+#section2 .fila .cards:hover:after{
+width:100%;
+}
+
+#section2 .fila .cards:hover h4,
+#section2 .fila .cards:hover p,
+#section2 .fila .cards:hover li{
+    color: #ffffff;
+}
+
+#section2 .fila .cards img{
+    width: 60px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .cards h4{
+    font-size: 25px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .cards p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .cards ul{
+    padding-left: 20px;
+    margin-top: 14px;
+    z-index: 9;
+    position: relative;
+}
+
+#section2 .fila .card ul li{
+    margin: 10px 0;
+    font-weight: 400;
+    z-index: 9;
+    position: relative;
+}
+/* CSS habilidades 2 */
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 150px 0 100px;
+    text-align: center;
+}
+#servicios h2{
+    color: #fff;
+    font-size: var(--fontSize-title);
+    font-weight: 700;
+}
+
+#servicios p{
+    color: #c6c6c6;
+    font-size: var(--fontSize-parrafos);
+}
+#servicios .row{
+    padding-top: 70px;
+}
+
+#servicios .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    transition: .4s;
+    max-width: 280px;
+    margin:0 auto ;
+    margin-bottom: 70px;
+}
+#servicios .card-services:hover{
+    background: var(--primary-color);
+}
+
+#servicios .card-services img{
+    background: #93B1A6;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+}
+#servicios .card-services h3{
+    text-align: right;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 15px;
+
+}
+#servicios .card-services h3{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px ;
+}
+#servicios .card-services p{
+    font-size: 15px;
+    color: #ff0000;
+    text-align: left;
+    line-height: 30px;
+    margin-bottom: 15px;
+
+}
+#servicios .card-services p{
+    color: #c6c6c6;
+    text-align: left;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--third-color);
+}
