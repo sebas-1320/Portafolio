@@ -1,13 +1,15 @@
 *{
-    background-color: #040D12;
+    /* background-color: #040D12; */
     --primary-color:  #044343;
     --secundari-color: #045757;
-    --third-color:#5C8374;
+    --third-color:#93B1A6;
     --quarter-color:#EEEEEE;
 }
-/* CSS inicio */
+/* Inicio */
 header{
     padding-top: 150px;
+    background: #040D12;
+    padding: 150px 0 100px;
 }
 nav.portafolio{
     background: var(--primary-color);
@@ -18,7 +20,7 @@ nav.portafolio{
     text-decoration: none;
 }
 #inicio h1{
-    color: #EEEEEE;
+    color: var(--secundari-color);
     font-size: 50px;
 }
 #inicio h2{
@@ -27,21 +29,32 @@ nav.portafolio{
 }
 #inicio a{
     color: #EEEEEE;
-    font-size: 20px;
+    font-size: 15px;
 }
 #inicio p{
     color: #EEEEEE;
     font-size: 20px;
 }
+#inicio .cont-info p b{
+    color: var(--third-color);
+}
 nav.navbar-brand img{
     width: 200px;
     width: 100%;
 }
-
+nav.cont-foto{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 40px;
+    background-color: red;
+}
 nav.portafolio ul li{
     margin-top: 14px;
 }
-
 nav.portafolio ul li a {
     color: #fff;
     position: relative;
@@ -50,143 +63,156 @@ nav.portafolio ul li a {
 }
 nav.portafolio ul li a:hover{
     color: var(--third-color);
+    background: #040D12;
+    border-radius: 15px;
+    transition: 0.3s;
 }
-
-/* CSS Perfil */
+#inicio article{
+    margin-top: 30px;
+}
+#inicio .iconos{
+    padding: 0 8px 20px;
+}
+#inicio i{
+    font-size: 30px;
+    color: var(--quarter-color);
+    margin: 0 5px;
+    transition: 1s;
+}
+#inicio i:hover{
+    color: var(--third-color);
+    transition: 0.5s;
+}
+/* Perfil */
+#perfil{
+    background: #f5f5f5;
+    padding: 50px 0 100px;
+}
 #perfil h1{
     color: #EEEEEE;
     font-size: 50px;
 }
 #perfil h2{
-    color: var(--secundari-color);
-    font-size: 35px;
+    color: var(--primary-color);
+    font-size: 40px;
 }
-#perfil a{
-    color: #EEEEEE;
-    font-size: 20px;
+#perfil h3{
+    color: var(--secundari-color);
+    font-size: 30px;
 }
 #perfil p{
-    color: #EEEEEE;
+    color: #040D12;
     font-size: 20px;
 }
-/* CSS habilidades 1 */
-#section2{
-    background: #f5f5f5;
-    padding: 120px 0 210px;
+
+/*  Habilidades */
+#habilidades{
+    background: #040D12;
+    padding: 50px 0 100px;
     width: 100%;
     position: relative;
 }
-
-#section2 .info-section2{
+#habilidades .info-habilidades{
     width: 60%;
 }
-
-#section2 .info-section2 h3{
+#habilidades .info-habilidades h3{
+    color: var(--quarter-color);
     font-size: 40px;
     margin-bottom: 30px;
 }
-
-#section2 .info-section2 h3 b{
+#habilidades .info-habilidades h3 b{
     color: var(--primary-color);
 }
-
-#section2 .info-section2 p{
+#habilidades .info-habilidades p{
+    color: var(--quarter-color);
     font-size: 18px;
     font-weight: 400;
 }
-
-
-#section2 .fila .cards{
+#habilidades .fila .cards{
     width: 30%;
-    max-width: 270px;
+    max-width: 400px;
     padding: 50px;
     box-shadow: 0px 4px 8px -5px #999;
     margin-top: 50px;
     border-bottom: 4px solid var(--primary-color);
     background: #ffffff;
     position: relative;
+    justify-content: space-around
 }
-
-#section2 .fila .cards::after{
+#habilidades .fila .cards::after{
     width: 0;
     height: 100%;
     content: "";
     position: absolute;
     left:0;
     top: 0;
-    background: url(../img/bg-section.jpg);
+    background: url(../img/codigo.png);
     opacity: 30% var(--second-color);
     z-index: 1;
     transition: .4s;
 }
-
-#section2 .fila .cards:hover:after{
+#habilidades .fila .cards:hover:after{
 width:100%;
 }
-
-#section2 .fila .cards:hover h4,
-#section2 .fila .cards:hover p,
-#section2 .fila .cards:hover li{
+#habilidades .fila .cards:hover h4,
+#habilidades .fila .cards:hover p,
+#habilidades .fila .cards:hover li{
     color: #ffffff;
 }
-
-#section2 .fila .cards img{
+#habilidades .fila .cards img{
     width: 60px;
     z-index: 9;
     position: relative;
 }
-
-#section2 .fila .cards h4{
+#habilidades .fila .cards h4{
     font-size: 25px;
     margin-top: 14px;
     margin-bottom: 14px;
     z-index: 9;
     position: relative;
 }
-
-#section2 .fila .cards p{
+#habilidades .fila .cards p{
     font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     z-index: 9;
     position: relative;
 }
-
-#section2 .fila .cards ul{
+#habilidades .fila .cards ul{
     padding-left: 20px;
     margin-top: 14px;
     z-index: 9;
     position: relative;
 }
-
-#section2 .fila .card ul li{
+#habilidades .fila .card ul li{
     margin: 10px 0;
     font-weight: 400;
     z-index: 9;
     position: relative;
 }
-/* CSS habilidades 2 */
-#servicios{
+
+/* CSS  Portafolio */
+#portafolio{
     width: 100%;
     position: relative;
-    padding: 150px 0 100px;
+    padding: 50px 0 50px;
     text-align: center;
 }
-#servicios h2{
-    color: #fff;
+#portafolio h2{
+    color: var(--primary-color);
     font-size: var(--fontSize-title);
     font-weight: 700;
+    font-size: 40px;
 }
-
-#servicios p{
-    color: #c6c6c6;
+#portafolio p{
+    color: #040D12;
     font-size: var(--fontSize-parrafos);
+    font-size: 30px;
 }
-#servicios .row{
+#portafolio .row{
     padding-top: 70px;
 }
-
-#servicios .card-services{
+#portafolio .card-services{
     background: #292c36;
     border-radius: 4px;
     position: relative;
@@ -200,34 +226,26 @@ width:100%;
     margin:0 auto ;
     margin-bottom: 70px;
 }
-#servicios .card-services:hover{
+#portafolio .card-services:hover{
     background: var(--primary-color);
 }
-
-#servicios .card-services img{
+#portafolio .card-services img{
     background: #93B1A6;
-    width: 70px;
+    width: 125px;
     padding: 15px;
     border-radius: 4px;
     position: absolute;
     top: -30px;
     left: 30px;
 }
-#servicios .card-services h3{
-    text-align: right;
-    color: #fff;
-    font-size: 40px;
-    margin-bottom: 15px;
-
-}
-#servicios .card-services h3{
+#portafolio .card-services h3{
     color: #ffffff;
     font-weight: 600;
     font-size: 18px;
     text-align: left;
     margin-bottom: 15px ;
 }
-#servicios .card-services p{
+#portafolio .card-services p{
     font-size: 15px;
     color: #ff0000;
     text-align: left;
@@ -235,11 +253,118 @@ width:100%;
     margin-bottom: 15px;
 
 }
-#servicios .card-services p{
+#portafolio .card-services p{
     color: #c6c6c6;
     text-align: left;
     display: inline-block;
     font-size: 16px;
     text-decoration: none;
     border-bottom: 2px solid var(--third-color);
+}
+
+/* clases estudios */
+#estudios{
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+}
+#estudios h2{
+    font-size: 40px;
+    margin-bottom: 40px;
+    color: var(--primary-color);
+}
+#estudios .fila{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+#estudios article{
+    margin: 0 40px;
+    position: relative;
+}
+#estudios article h3{
+    position: relative;
+    text-align: center;
+    color: var(--quarter-color);
+}
+#estudios{
+    background: #040D12;
+    background-size: cover;
+}
+
+/* clases hobbies */
+#hobbies{
+    background: #040D12;
+    width: 100%;
+    position: relative;
+    text-align: left;
+    padding: 100px 0 100px;
+}
+#hobbies h2{
+    font-size: var(--fontSize-title);
+    color: var(--quarter-color);
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+#hobbies .card-destacadas{
+    border-radius: 4px;
+    position: relative;
+}
+#hobbies .card-hobbies img{
+    width: 100%;
+}
+#hobbies .card-hobbies .cont-info{
+    background: #292c36;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    transition: .4s ;
+}
+#hobbies .card-hobbies .cont-info:hover{
+    background: var(--primary-color);
+}
+.card-hobbies .cont-info h3{
+    font-size:20px ;
+    color: var(--quarter-color);
+    font-weight: 600;
+}
+.card-hobbies .cont-info p{
+    color: var(--quarter-color);
+    font-size: 16px;
+}
+#habilidades #tarjetas-container{
+    display: flex;
+    justify-content: center;
+    gap: 0 50px;
+}
+
+/* vercion responsive table */
+@media  screen and (min-width: 768px) and (max-width: 1024px){
+
+    section{
+        width: 100%;
+    }
+    
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 40%;
+        margin-bottom: 40px;
+    }
+}
+
+/* vercion responsive celular */
+@media  screen and (min-width: 320px) and (max-width: 767px){
+    section{
+        width: 100%;
+    }
+    section .fila article{
+        width: 100%;
+    }
+    section .fila2 article{
+        width: 88%;
+        margin: 0 auto 40px;
+    }
 }
