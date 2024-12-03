@@ -4,12 +4,17 @@
     --secundari-color: #045757;
     --third-color:#93B1A6;
     --quarter-color:#EEEEEE;
+    --fodo1:#040D12;
+    --fondo2:#EEEEEE;
 }
 /* Inicio */
 header{
     padding-top: 150px;
-    background: #040D12;
+    background: var(--fodo1);
     padding: 150px 0 100px;
+}
+#inicio{
+    position: relative;
 }
 nav.portafolio{
     background: var(--primary-color);
@@ -28,11 +33,11 @@ nav.portafolio{
     font-size: 35px;
 }
 #inicio a{
-    color: #EEEEEE;
+    color: var(--quarter-color);
     font-size: 15px;
 }
 #inicio p{
-    color: #EEEEEE;
+    color: var(--quarter-color);
     font-size: 20px;
 }
 #inicio .cont-info p b{
@@ -41,6 +46,18 @@ nav.portafolio{
 nav.navbar-brand img{
     width: 200px;
     width: 100%;
+}
+header::before{
+    position: absolute;
+    content: "";
+    width: 400px;
+    height: 350px;
+    background-color: #045757;
+    position: absolute;
+    bottom: 100px;
+    right: 56%;
+    z-index: 0;
+    border-radius: 30px;
 }
 nav.cont-foto{
     z-index: 1;
@@ -56,14 +73,14 @@ nav.portafolio ul li{
     margin-top: 14px;
 }
 nav.portafolio ul li a {
-    color: #fff;
+    color: var(--quarter-color);
     position: relative;
     font-size: 20px;
     margin: 0 12px;
 }
 nav.portafolio ul li a:hover{
     color: var(--third-color);
-    background: #040D12;
+    background: var(--fodo1);
     border-radius: 15px;
     transition: 0.3s;
 }
@@ -85,12 +102,8 @@ nav.portafolio ul li a:hover{
 }
 /* Perfil */
 #perfil{
-    background: #f5f5f5;
+    background: var(--fondo2);
     padding: 50px 0 100px;
-}
-#perfil h1{
-    color: #EEEEEE;
-    font-size: 50px;
 }
 #perfil h2{
     color: var(--primary-color);
@@ -101,13 +114,13 @@ nav.portafolio ul li a:hover{
     font-size: 30px;
 }
 #perfil p{
-    color: #040D12;
+    color: var(--fodo1);
     font-size: 20px;
 }
 
 /*  Habilidades */
 #habilidades{
-    background: #040D12;
+    background: var(--fodo1);
     padding: 50px 0 100px;
     width: 100%;
     position: relative;
@@ -132,7 +145,7 @@ nav.portafolio ul li a:hover{
     width: 30%;
     max-width: 400px;
     padding: 50px;
-    box-shadow: 0px 4px 8px -5px #999;
+    box-shadow: 2px 8px 8px 2px var(--primary-color);
     margin-top: 50px;
     border-bottom: 4px solid var(--primary-color);
     background: #ffffff;
@@ -157,7 +170,7 @@ width:100%;
 #habilidades .fila .cards:hover h4,
 #habilidades .fila .cards:hover p,
 #habilidades .fila .cards:hover li{
-    color: #ffffff;
+    color: var(--quarter-color);
 }
 #habilidades .fila .cards img{
     width: 60px;
@@ -194,6 +207,7 @@ width:100%;
 /* CSS  Portafolio */
 #portafolio{
     width: 100%;
+    background: var(--fondo2);
     position: relative;
     padding: 50px 0 50px;
     text-align: center;
@@ -205,7 +219,7 @@ width:100%;
     font-size: 40px;
 }
 #portafolio p{
-    color: #040D12;
+    color: var(--fodo1);
     font-size: var(--fontSize-parrafos);
     font-size: 30px;
 }
@@ -230,7 +244,7 @@ width:100%;
     background: var(--primary-color);
 }
 #portafolio .card-services img{
-    background: #93B1A6;
+    background: #87b3a3;
     width: 125px;
     padding: 15px;
     border-radius: 4px;
@@ -239,7 +253,7 @@ width:100%;
     left: 30px;
 }
 #portafolio .card-services h3{
-    color: #ffffff;
+    color: var(--quarter-color);
     font-weight: 600;
     font-size: 18px;
     text-align: left;
@@ -247,14 +261,14 @@ width:100%;
 }
 #portafolio .card-services p{
     font-size: 15px;
-    color: #ff0000;
+    color: var(--quarter-color);
     text-align: left;
     line-height: 30px;
     margin-bottom: 15px;
 
 }
 #portafolio .card-services p{
-    color: #c6c6c6;
+    color: var(--quarter-color);
     text-align: left;
     display: inline-block;
     font-size: 16px;
@@ -267,6 +281,8 @@ width:100%;
     width: 100%;
     padding: 100px 0;
     text-align: center;
+    background: var(--fodo1);
+    background-size: cover;
 }
 #estudios h2{
     font-size: 40px;
@@ -287,14 +303,9 @@ width:100%;
     text-align: center;
     color: var(--quarter-color);
 }
-#estudios{
-    background: #040D12;
-    background-size: cover;
-}
-
 /* clases hobbies */
 #hobbies{
-    background: #040D12;
+    background: var(--fondo2);
     width: 100%;
     position: relative;
     text-align: left;
@@ -356,7 +367,7 @@ width:100%;
 }
 
 /* vercion responsive celular */
-@media  screen and (min-width: 320px) and (max-width: 767px){
+@media  screen and (min-width: 430px) and (max-width: 932px){
     section{
         width: 100%;
     }
